@@ -1,0 +1,18 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "My Dev Container",
+    "dockerFile": "../Dockerfile", // ajuste o caminho conforme a localização real do Dockerfile
+    "forwardPorts": [
+        8080
+    ],
+    "remoteUser": "usuario",
+    "workspaceMount": "source=/var/www/html/template,target=/var/www/html/template,type=bind,consistency=cached",
+    "appPort": [
+        8080
+    ],
+    "runArgs": [
+        "--network=host"
+    ],
+    "workspaceFolder": "/var/www/html/template", // ajuste o caminho para refletir o seu caso
+    "postStartCommand": "php-fpm7.4 && nginx -g 'daemon off;'"
+}
