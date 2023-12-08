@@ -1,12 +1,12 @@
 # Docker + PHP + Nginx + Adianti
 
-## Antes de criar o container usando a extensão é preciso ter uma pasta .devcontainer e dentro um arquivo devcontainer.json especificando determinadas configurações, além obviamente do Dockerfile.
+Antes de criar o container usando a extensão é preciso ter uma pasta .devcontainer e dentro um arquivo devcontainer.json especificando determinadas configurações, além obviamente do Dockerfile.
 
 ### Comandos para criar e utilizar um container Docker com volumes utilizando a extensão Dev Container:
 
-# Ctrl + Shift + P
+Ctrl + Shift + P
 
-# Dev Containers: Rebuild and Reopen in Container
+### Dev Containers: Rebuild and Reopen in Container
 
 Com a extensão Dev Container nem é necessário fazer os comandos do docker, para criar a imagem e o container, ela já faz isso para você.
 Porém o dockerfile, e o devcontainer devem estar bem configurados para funcionar corretamente.
