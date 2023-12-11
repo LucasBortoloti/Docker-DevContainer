@@ -16,4 +16,10 @@ Com a extensão Dev Container nem é necessário fazer os comandos do docker, pa
 
 Eu tive um problema com a extensão do docker, onde qualquer alteração que eu fizesse em algum arquivo do container a partir da extensão, ele salvava como root mesmo eu especificando o usuario no dockerfile, acredito que deve haver alguma solução para isso, mas eu não consegui arrumar esse problema. Já com a Dev Container funcionou perfeitamente.
 
+# Para especificar outro diretório diferente do template, seria necessário fazer algumas alterações:
+
+No devcontainer.json: mudar o workspaceMount e o workspaceFolder
+
+No Dockerfile: na parte do nginx.conf mudar o root para diretório desejado.
+
 ### d:) :v:
