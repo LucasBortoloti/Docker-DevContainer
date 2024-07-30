@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y \
     php7.4-fpm \
     php7.4-mysqlnd \
     php7.4-pdo php7.4-pdo-mysql php7.4-mysql \
-    php7.4-sqlite3
+    php7.4-sqlite3 \
+    php-mbstring
 
 # Instalação do PHPUnit
 RUN wget -O /usr/local/bin/phpunit-9.phar https://phar.phpunit.de/phpunit-9.0.phar; \
